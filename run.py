@@ -98,6 +98,7 @@ def predict_multiview(shape_dir, args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('--request-id', type=str, help="request id")
     parser.add_argument('--img_path', type=str, default="./demo/demo_examples/01_wild_hydrant.png", help='Path to the input image')
     parser.add_argument('--gpu_idx', type=int, default=0, help='GPU index')
     parser.add_argument('--half_precision', action='store_true', help='Use half precision')
